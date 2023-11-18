@@ -1,2 +1,163 @@
 body{margin: 0;
     padding:0;}
+
+#topAdv{
+    display: block;
+    width: 100%;
+    height: 60px;;
+}
+
+#topAdv > img{    
+    display: inline-block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#header >.topOfHeader{
+    margin: auto;
+    width: 1644px;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    
+    height: 68px;
+    direction: rtl;
+}
+@media screen and (max-width : 1644px ) {
+     #header >.topOfHeader{
+        width: 100%;
+     }
+}
+#header >.topOfHeader >#logo{
+    display: inline-block;
+    height: 60%;
+    width: 120px;
+    padding: 0;
+    margin: 0;
+
+}
+#header >.topOfHeader >#logo > img{
+    height: 100%;
+    width: 100%;
+}
+#header >.topOfHeader > .mainSearchContainer{
+    position: relative;
+    margin: 0 10px 0 10px;
+    flex-grow: 4;
+   
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+#header >.topOfHeader > .mainSearchContainer> #fakeDivSearch{
+    position: relative;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    height: 40px;
+    width: 600px;
+    background-color: rgba(155,155,155,0.1);
+    line-height: 40px;
+    text-indent: 10px;
+    color: #aaa;
+}
+
+#header >.topOfHeader > .mainSearchContainer> #fakeDivSearch > .fakeSearchIcon >svg {
+    margin-left: 15px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.mainSearchContainer>#divSearch{
+   
+    position: absolute;
+    color: black;
+    border: black solid 1px;
+    width: 600px;
+    height: 600px;
+    background-color:#fff;
+    border-radius: 8px;
+    top: 10px;
+    right: 0;
+    /* background-color: blue; */
+}
+.mainSearchContainer>#divSearch > #search {
+
+    display: inline-block;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    
+}
+.mainSearchContainer>#divSearch > #search >svg {
+    display: block;
+    height: 100%;    
+    margin: 8px 2px 0 0;
+    opacity: 0.7;
+    width: 100%;
+}
+.mainSearchContainer >#divSearch >input{
+    display: inline;
+    margin:10px 10px 0 0  ;
+    
+    width: 80%;
+    padding: 10px;
+    
+    border: 0 none;
+    
+    }
+.mainSearchContainer >#divSearch >input:focus{
+    outline: none;
+}
+#exitFromSearch{
+    display: block;
+    position: absolute;
+    height: 25px;
+    left: 15px;
+    top: 15px;
+    width: 25px;
+
+}
+#exitFromSearch>svg{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+#header >.topOfHeader > .shopingCartAndSign{
+
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 40px;
+}
+
+
+#header >.topOfHeader > .shopingCartAndSign > #signLogIn{
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    text-decoration: none;
+    text-indent: 10px;
+    color: #888;
+    justify-content: center; 
+    width: 120px;
+    height: 80%;
+    margin-left: 10px;
+}
+#header >.topOfHeader > .shopingCartAndSign > #shopingCart{
+    text-decoration: none;
+    width:30px;
+    height: 30px;
+    padding-right: 10px;
+    border-right: 1px solid #ccc    ;
+    background: url("../images/cart-shopping.svg") no-repeat 50% 50%;
+    background-size: 15px;
+}
+.hiden{
+    display: none;
+}
+.show{
+    display: block;
+}
