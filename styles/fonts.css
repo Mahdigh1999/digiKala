@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Aban;
+    src: url('../fonts/Aban.ttf');
+}
+@font-face {
+    font-family: Kokab;
+    src: url('../fonts/Kokab.ttf');
+}
+@font-face {
+    font-family: Mitra;
+    src: url('../fonts/Mitra.ttf');
+}
+@font-face {
+    font-family: Mj;
+    src: url('../fonts/Mj flow.ttf');
+}
+@font-face {
+    font-family: Ramsar;
+    src: url('../fonts/Ramsar.ttf');
+}
+@font-face {
+    font-family: Roya;
+    src: url('../fonts/Roya.ttf');
+}
+@font-face {
+    font-family: Th;
+    src: url('../fonts/Thuluth.ttf');
+}
+@font-face {
+    font-family: Tr;
+    src: url('../fonts/Traffic.ttf');
+}
+@font-face {
+    font-family: Yekan;
+    src: url('../fonts/Yekan.ttf');
+}
+@font-face {
+    font-family: Nasim;
+    src: url('../fonts/nasim.ttf');
+}
