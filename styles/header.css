@@ -14,6 +14,11 @@ body{margin: 0;
     width: 100%;
 }
 /*Top Of Header -------------------------------------------------------------------------------------------------*/
+#header{
+    /* border: solid 1px black; */
+    box-shadow: 0px 0px 5px 1px #ccc;
+}
+
 #header >.topOfHeader{
     margin: 0 auto;
     width: 1644px;
@@ -182,29 +187,107 @@ body{margin: 0;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-#header > .bottomOfHeader > #interstingThings > #bigMenu{
-list-style: none;
-    margin: 0;
-    /* border: 1px solid black; */
-    height: 100%;
-    width: 100px;
+#header > .bottomOfHeader > .bigMenu{
+    position: relative;
+    transition: 0.25s;
+    background: url('../images/interstingThingIcons/menu_icons.png') 95% 50% no-repeat;
+    background-size: 20px;
+    text-indent: 30px;
+    line-height: 40px;
+    cursor: pointer;
+    height: 95%;
+    width: 140px;
+    color: #555;
+    font-weight: bold;
+}
+#header > .bottomOfHeader > .bigMenu:hover{
+    transition: 0.25s;
+    border-bottom: 3px solid red;
 
 }
+#header > .bottomOfHeader > .bigMenu:hover >.holderMenu{
+    opacity: 1;
+    visibility: visible;
+    
+}
+#header > .bottomOfHeader > .bigMenu >.holderMenu{
+    transition: 0.5s;
+    text-indent: 0;
+    /* border: 1px solid #555; */
+    height:70vh;
+    width:1200px;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    /* justify-content: right; */
+}
+@media screen and (min-height:1000px) {
+    #header > .bottomOfHeader > .bigMenu >.holderMenu{
+        height: fit-content;
+    }
+}
+
+#header > .bottomOfHeader > .bigMenu >.holderMenu > .rightHandMenu {
+    /* border: 1px red solid; */
+    background-color: rgba(240 ,240 ,240 ,1);
+    color: #555;
+    overflow-y: scroll;
+    direction: ltr;
+    height: 100%;
+    width:200px;
+}
+.rightHandMenu >a:hover{
+    background-color: #fff;
+}
+#header > .bottomOfHeader > .bigMenu >.holderMenu > .rightHandMenu >a{
+    text-decoration: none;
+    color: #555;
+    font-size: 12px;
+    display: block;
+    height: 3rem;
+    padding-right: 2px;
+    text-align: end;
+    /* border: 1px solid red; */
+    line-height: 3rem;
+}
+.holderMenu > .rightHandMenu >a>svg{
+    position: relative;
+    top: 0.1rem;
+    display: inline-block;
+}
+
+
+#header > .bottomOfHeader > .bigMenu >.holderMenu > .leftHandMenu {
+    /* flex-grow: 2; */
+    position: relative;
+    width:1000px;
+    border: 1px #ccc solid;
+    border-radius: 0 0 0 5px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bigMenu >.holderMenu > .leftHandMenu > ul{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* border: 1px solid red ; */
+    height: 100%;
+    background-color: #fff;
+} 
+
+
+
+
+
+
 
 .bottomOfHeader > #interstingThings{
-    
+
     list-style: none;
     
     height: 95%;
@@ -226,11 +309,15 @@ list-style: none;
     transition: 0.3s;
     border-bottom: 0px solid red;
     height: 100%;
-    margin: 5px 10px 5px 10px;
+    margin: 0px 8px 0px 8px;
     
 }
-.bottomOfHeader > #interstingThings > li:nth-child(5n + 1){
-    border-left: 1px solid #ccc;
+.bottomOfHeader > #interstingThings > li:first-child{
+    padding-right: 10px;
+
+}
+.bottomOfHeader > #interstingThings > li:nth-child(5n+1){
+    border-right: 1px solid #ccc;
     padding-left: 10px;
     height: 100%;
 }
@@ -239,6 +326,7 @@ list-style: none;
     padding-right: 20px;
     color: #888;
     text-decoration: none;
+
 }
 .bottomOfHeader > .location{
     background: url('../images/interstingThingIcons/location.png') no-repeat 95% 65%; 
@@ -263,17 +351,19 @@ list-style: none;
     }
     .bottomOfHeader > #interstingThings > li{
         font-size: 15px;
+        /* padding: 0 5px 0 5px; */
     }
-    .bottomOfHeader > #interstingThings > li:nth-child(5){
-        display: none;
-        
-    }
-
 }
+
+
 @media screen and (max-width : 1000px ) {
     .bottomOfHeader > #interstingThings > li{
         font-size: 10px;
+    }    
+    .bottomOfHeader > #interstingThings > li:nth-child(5){
+        display: none;
     }
+    
 }
 
 
