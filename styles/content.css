@@ -1,0 +1,27 @@
+#content{
+    height: 2000px;
+    width : 1640px;
+    border: solid 1px red;
+    margin: auto;
+}
+#content > .digiKalaStory{
+    height: 100px;
+    width:1200px;
+    /* border: 1px solid  black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#content > .digiKalaStory > div{
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50% 50% 50% 50% ;
+    cursor: pointer;
+    
+
+    border:  1px solid blue;
+    width: 80px;
+    height: 80px;
+    
+}
