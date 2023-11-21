@@ -7,8 +7,9 @@
     z-index: 100;;
     /* position: relative; */
     /* position: fixed; */
-    perspective: 200000px;
+    perspective: 2000000px;
     position: fixed;
+    margin: 20px 0 20px 0;
     background-color: rgba(10,10,10,0.6);
     /* transform-style: preserve-3d; */
 }  
@@ -151,7 +152,7 @@
 #content > .digiKalaStory{
     height: 100px;
     width:1200px;
-    margin: auto;
+    margin: 20px auto;
     /* border: 1px solid  black; */
 }
 #content > .digiKalaStory > #initionalezor{
@@ -171,6 +172,19 @@
     width:100%;
 }
 
+@media screen and (max-width:1500px){
+    #content > .digiKalaStory{
+        /* height: 100px; */
+        width:100%;
+        margin: 30px auto;
+        /* border: 1px solid  black; */
+    }
+    #content > .digiKalaStory > #initionalezor{
+
+        justify-content: space-around;
+
+    }
+}
 
 
 @keyframes timer {
