@@ -1,0 +1,410 @@
+body{margin: 0;
+    padding:0;
+    /* perspective: 600px; */
+    position: relative;
+}
+/*Advertising -------------------------------------------------------------------------------------------------*/
+#topAdv{
+    display: block;
+    width: 100%;
+    height: 60px;;
+}
+
+#topAdv > img{    
+    display: inline-block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+/*Top Of Header -------------------------------------------------------------------------------------------------*/
+#header{
+    /* border: solid 1px black; */
+    
+    box-shadow: 0px 0px 5px 1px #ccc;
+}
+
+#header >.topOfHeader{
+    margin: 0 auto;
+    width: 1644px;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    
+    height: 68px;
+    direction: rtl;
+}
+/* @media screen and (max-width : 1644px ) {
+     #header >.topOfHeader{
+        width: 100%;
+     }
+} */
+#header >.topOfHeader >#logo{
+    display: inline-block;
+    height: 60%;
+    width: 120px;
+    padding: 0;
+    margin: 0;
+
+}
+#header >.topOfHeader >#logo > img{
+    height: 100%;
+    width: 100%;
+}
+#header >.topOfHeader > .mainSearchContainer{
+    position: relative;
+    margin: 0 10px 0 10px;
+    flex-grow: 4;
+   
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+#header >.topOfHeader > .mainSearchContainer> #fakeDivSearch{
+    position: relative;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    height: 40px;
+    width: 600px;
+    background-color: rgba(155,155,155,0.1);
+    line-height: 40px;
+    text-indent: 10px;
+    color: #aaa;
+}
+
+#header >.topOfHeader > .mainSearchContainer> #fakeDivSearch > .fakeSearchIcon >svg {
+    margin-left: 15px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.mainSearchContainer>#divSearch{
+    z-index: 21;
+    position: absolute;
+    color: black;
+    border: black solid 1px;
+    width: 600px;
+    height: 600px;
+    background-color:#fff;
+    border-radius: 8px;
+    top: 10px;
+    right: 0;
+    /* background-color: blue; */
+}
+.mainSearchContainer>#divSearch > #search {
+
+    display: inline-block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    
+}
+.mainSearchContainer>#divSearch > #search >svg {
+    position: relative;
+    top: 7px;
+    right: 10px;
+    display: block;
+    height: 100%;    
+    opacity: 0.7;
+    width: 100%;
+}
+.mainSearchContainer >#divSearch >input{
+    display: inline;
+    /* margin:10px 10px 0 0  ; */
+    
+    width: 80%;
+    padding: 10px 20px 10px 10px;
+    
+    border: 0 none;
+    
+    }
+.mainSearchContainer >#divSearch >input:focus{
+    outline: none;
+}
+#exitFromSearch{
+    display: block;
+    position: absolute;
+    height: 25px;
+    left: 15px;
+    top: 10px;
+    width: 25px;
+
+}
+#exitFromSearch>svg{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+#header >.topOfHeader > .shopingCartAndSign{
+
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 40px;
+}
+
+
+#header >.topOfHeader > .shopingCartAndSign > #signLogIn{
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    text-decoration: none;
+    text-indent: 10px;
+    color: #888;
+    justify-content: center; 
+    width: 120px;
+    height: 80%;
+    margin-left: 10px;
+}
+#header >.topOfHeader > .shopingCartAndSign > #shopingCart{
+    text-decoration: none;
+    width:30px;
+    height: 30px;
+    padding-right: 10px;
+    border-right: 1px solid #ccc    ;
+    background: url("../images/cart-shopping.svg") no-repeat 50% 50%;
+    background-size: 15px;
+}
+.hiden{
+    transition: 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+.show{
+    transition: 0.4s;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Bottom Of Header --------------------------------------------------------------------------------------------*/
+
+#header > .bottomOfHeader{
+    font-family: Yekan;
+    display: flex;
+    direction: rtl;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width : 1644px;
+    margin:0 auto;    
+}
+
+
+#header > .bottomOfHeader > .bigMenu{
+    z-index: 20;
+    position: relative;
+    transition: 0.25s;
+    background: url('../images/interstingThingIcons/menu_icons.png') 95% 50% no-repeat;
+    background-size: 20px;
+    text-indent: 30px;
+    line-height: 40px;
+    cursor: pointer;
+    height: 95%;
+    width: 140px;
+    color: #555;
+    font-weight: bold;
+}
+#header > .bottomOfHeader > .bigMenu:hover{
+    transition: 0.25s;
+    border-bottom: 3px solid red;
+
+}
+#header > .bottomOfHeader > .bigMenu:hover >.holderMenu{
+    opacity: 1;
+    visibility: visible;
+    
+}
+#header > .bottomOfHeader > .bigMenu >.holderMenu{
+    transition: 0.5s;
+    text-indent: 0;
+    /* border: 1px solid #555; */
+    height:70vh;
+    width:1200px;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    /* justify-content: right; */
+}
+@media screen and (min-height:1000px) {
+    #header > .bottomOfHeader > .bigMenu >.holderMenu{
+        height: fit-content;
+    }
+}
+
+#header > .bottomOfHeader > .bigMenu >.holderMenu > .rightHandMenu {
+    /* border: 1px red solid; */
+    background-color: rgba(240 ,240 ,240 ,1);
+    color: #555;
+    overflow-y: scroll;
+    direction: ltr;
+    height: 100%;
+    width:200px;
+}
+.rightHandMenu >a:hover{
+    background-color: #fff;
+}
+#header > .bottomOfHeader > .bigMenu >.holderMenu > .rightHandMenu >a{
+    text-decoration: none;
+    color: #555;
+    font-size: 12px;
+    display: block;
+    height: 3rem;
+    padding-right: 2px;
+    text-align: end;
+    /* border: 1px solid red; */
+    line-height: 3rem;
+}
+.holderMenu > .rightHandMenu >a>svg{
+    position: relative;
+    top: 0.1rem;
+    display: inline-block;
+}
+
+
+#header > .bottomOfHeader > .bigMenu >.holderMenu > .leftHandMenu {
+    /* flex-grow: 2; */
+    position: relative;
+    width:1000px;
+    border: 1px #ccc solid;
+    border-radius: 0 0 0 5px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bigMenu >.holderMenu > .leftHandMenu > ul{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* border: 1px solid red ; */
+    height: 100%;
+    background-color: #fff;
+} 
+
+
+
+
+
+
+
+.bottomOfHeader > #interstingThings{
+
+    list-style: none;
+    
+    height: 95%;
+    margin: 0;
+    padding: 0;
+    flex-grow: 4;   
+    display: flex;
+    align-content:center ;
+    line-height: 40px;
+}
+.bottomOfHeader > #interstingThings > li:hover{
+    transition: 0.3s;
+    border-bottom: 4px solid red;
+}
+
+.bottomOfHeader > #interstingThings > li{
+    /* background: url('../images/interstingThingIcons/location.png') no-repeat 0% 0%;
+    background-size: 20px; */
+    transition: 0.3s;
+    border-bottom: 0px solid red;
+    height: 100%;
+    margin: 0px 8px 0px 8px;
+    
+}
+.bottomOfHeader > #interstingThings > li:first-child{
+    padding-right: 10px;
+
+}
+.bottomOfHeader > #interstingThings > li:nth-child(5n+1){
+    border-right: 1px solid #ccc;
+    padding-left: 10px;
+    height: 100%;
+}
+.bottomOfHeader > #interstingThings > li >a{
+    /* font-size: 12px; */
+    padding-right: 20px;
+    color: #888;
+    text-decoration: none;
+
+}
+.bottomOfHeader > .location{
+    background: url('../images/interstingThingIcons/location.png') no-repeat 95% 65%; 
+    background-size: 15px ;
+    font-size: 13px;
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: #555;
+    line-height: 48px;
+    text-indent: 30px;
+    height: 100%;
+    width: 173px;
+    
+}
+@media screen and (max-width : 1644px ) {
+    #header >.topOfHeader{
+       width: 100%;
+    }
+    
+    #header >.bottomOfHeader{
+       width: 100%;
+    }
+    .bottomOfHeader > #interstingThings > li{
+        font-size: 15px;
+        /* padding: 0 5px 0 5px; */
+    }
+}
+
+
+@media screen and (max-width : 1000px ) {
+    .bottomOfHeader > #interstingThings > li{
+        font-size: 12px;
+        padding:none;
+        margin:0 2px 0 2px;
+    }    
+    .bottomOfHeader > #interstingThings > li:nth-child(5){
+        display: none;
+    }
+    
+}
+@media screen and (max-width : 1500px ) {
+    .bottomOfHeader > #interstingThings > li{
+        font-size: 15px;   
+        padding:0 4px 0 4px;
+        margin:0 4px 0 4px; 
+    }    
+    .bottomOfHeader > #interstingThings > li:nth-child(5){
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
