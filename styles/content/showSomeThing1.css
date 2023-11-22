@@ -1,0 +1,45 @@
+#content > .showSomeThing1{
+    height: 250px;
+    width: 1400px;
+    display: flex;
+    /* border:  1px solid red; */
+    margin: auto;
+    justify-content: space-around;
+}
+#content > .showSomeThing1 > a{
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+}
+#content > .showSomeThing1 > a >img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    
+}
+
+@media screen and (max-width:1400px){
+    #content > .showSomeThing1{
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    #content > .showSomeThing1{
+    height: 500px;
+    width: 100%;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    }
+    #content > .showSomeThing1 > a{
+        display: block;
+        height: 45%;
+        width: 50%;
+    }
+}

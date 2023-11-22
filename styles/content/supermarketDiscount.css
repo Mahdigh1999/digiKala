@@ -1,0 +1,8 @@
+#content > .supermarketDicount{
+    height: 110px;
+    width :1400px;
+
+    margin: 20px auto 20px;
+    border-radius:  20px 20px 20px 20px ;
+    background:linear-gradient(90deg,rgba(50,250,90,1) , black);
+}

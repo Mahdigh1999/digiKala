@@ -1,0 +1,53 @@
+#content > .showSomeThing2{
+
+    margin: 30px auto;
+    height: 436px;
+    width: 1400px;
+
+
+}
+#content > .showSomeThing2 >h3{
+    height: 10%;
+    padding: 10px;
+    margin: 0;    
+    /* border: 1px solid black; */
+    /* margin: 10px; */
+    font-size: 25px;
+    font-family: Mitra;
+    width: 100%;
+    text-align: center;
+}
+#content > .showSomeThing2 >.items{
+    width: 100%;
+    height: 90%;   
+     
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#content > .showSomeThing2 > .items >a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-family: Mitra;
+    display: inline-block;    
+    height: 45%;
+    width: 11%;
+
+}
+#content > .showSomeThing2 > .items> a >img{
+    margin: 10px;
+    display: block;    
+    margin: auto;
+    width: 70%;
+}
+@media screen and (max-width:1400px){
+    #content > .showSomeThing2{
+        width: 100%;
+        height: auto;
+    }
+    
+}
