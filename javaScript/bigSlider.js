@@ -21,6 +21,7 @@ bigSliderGallery.style.right = (bigSlider.length - 1 ) *100 +'%';
 
 
 const divSwitched = bigSlider.map(e => `<div class = 'circle' id = BSS${e.id} onclick = bigSliderChanger(${e.id})></div>`);
+
 console.log(divSwitched);
 switcherSlider.innerHTML = divSwitched.join('');
 console.log(divSwitched.join('\n'));
@@ -94,4 +95,11 @@ function moveLeft4BigSlider(){
     eval('BSS' + lastSwitched).className = 'circle'
     eval('BSS' + sliderPostion / 100).className = 'circle switched'
     lastSwitched = sliderPostion /100;
+}
+
+switcherSlider.onmouseover = function(){
+    pauseBigSlider();
+}
+switcherSlider.onmouseout = function(){
+    playBigSlider();
 }
