@@ -67,6 +67,7 @@
 }
 
     #miniSlider1Gallery > a{
+    flex-grow: 1;
     position: relative;
     text-align: center;
     display: block;

@@ -1,0 +1,158 @@
+#digiKalaOffer{
+    position: relative;
+    height: 400px;
+    width: 1400px;
+    overflow: hidden;
+    /* border: 30px solid red; */
+    margin: 20px auto 50px;
+}
+#digiKalaOffer > h2{
+    font-family: tr ;
+    /* padding: 10px 0 10px 0; */
+    /* border: 1px solid black; */
+    margin: 10px auto 10px;
+    text-align: center;
+    /* height: 8%; */
+}
+#digiKalaOffer > #offersHolder{
+
+    position: absolute;
+
+    transition: 0.5s;
+    
+    right: 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+
+}
+#digiKalaOffer > #offersHolder > a {
+    flex-grow: 1;
+    display: inline-block;
+     text-decoration: none;
+    width: 13%;
+    height: 150px;
+    border: 1px solid #ccc;
+}
+#digiKalaOffer > #offersHolder > a > div{
+    margin:10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(235, 235, 235, 1) ;    
+    width: 50%;
+    height: 50%;
+}
+#digiKalaOffer > #offersHolder > a > div >img{
+
+    mix-blend-mode:darken;
+
+    width: 70%;
+    height: 70%;
+}
+#digiKalaOffer > #offersHolder > a >h3{
+    text-align: center;
+    color: black;
+    font-family: tr ;
+
+}
+
+#leftClickOffer:hover{ 
+    background-color: #ccc;
+}
+#rightClickOffer:hover{ 
+    background-color: #ccc;
+}
+#leftClickOffer{    
+    display: none;
+    background:url('../../images/digikalaOffer/left.png') no-repeat 50% 50% #fff;
+    background-size: 20px;
+    position: absolute;
+    z-index: 10;
+    height: 70px;
+    width: 70px;
+    border: 3px solid black;
+    top: 40%;
+    left: 10px;
+}
+#rightClickOffer{
+    display: none;
+    background:url('../../images/digikalaOffer/right.png') no-repeat 50% 50% #fff;
+    background-size: 20px;
+    right: 10px;
+    top:40%;
+    position: absolute;
+    z-index: 10;
+    height: 70px;
+    width: 70px;
+    border: 3px solid black;
+}
+/* #digiKalaOffer > .before1400px > a > div{
+    margin:10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(235, 235, 235, 1) ;    
+    width: 50%;
+    height: 50%;
+}
+#digiKalaOffer > .before1400px > a > div >img{
+
+    mix-blend-mode:darken;
+
+    width: 70%;
+    height: 70%;
+}
+#digiKalaOffer > .before1400px > a >h3{
+    text-align: center;
+    color: black;
+    font-family: tr ;
+
+} */
+
+
+
+@media screen and (max-width:1400px) {
+    #digiKalaOffer{
+        width: 98%;
+    }    
+    #digiKalaOffer > #offersHolder{
+        width: 150%;
+    }
+    #digiKalaOffer > #offersHolder > a {
+
+        width: 13%;
+
+    }
+    #leftClickOffer{top:40%;height: 50px; width: 50px;display: block;}
+    #rightClickOffer{top:40% ;height: 50px; width: 50px;}
+    /* #digiKalaOffer > .before1400px{
+
+        position: absolute;
+     
+        transition: 0.5s;
+        right: 0;
+        border: 1px solid red;
+        border-radius: 20px;
+        width: 2000px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    
+    } */
+    /* #digiKalaOffer > .before1400px > a {
+        flex-grow: 1;
+        display: inline-block;
+         text-decoration: none;
+        width: 13%;
+        height: 43%;
+        border: 1px solid #ccc;
+    } */
+
+
+
+
+}
