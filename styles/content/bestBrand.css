@@ -1,0 +1,85 @@
+#content > .bestBrands{
+    overflow: hidden;
+    position: relative;
+    height: 225px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 1400px;
+    margin: 0 auto 20px;
+}
+#content > .bestBrands > h3{
+    display: flex;
+    align-items: center;
+    /* height: 50px; */
+
+    justify-content: center    
+    /* margin:0 auto; */;
+    /* width:fit-content; */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+
+    font-family: Aban;
+    text-align: center;
+    }
+#content > .bestBrands > h3 >img{
+   
+    width:30px;
+}   
+#content > .bestBrands > #brandsHolder{
+    transition: 0.5s;
+    display: flex;
+    direction: rtl;
+    right: 0;
+    position: absolute;
+    height: 60%;
+    
+    /* border: 1px solid #ccc; */
+}
+#content > .bestBrands > #brandsHolder >a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #ccc;
+    
+    height: 100%;
+    /* width: 150px; */
+
+}
+#content > .bestBrands > #brandsHolder >a>img{
+    /* height: 100%; */
+    width: 50%;
+    z-index: -1;
+}
+#rightClickBrands{
+    background: url('../../images/digikalaOffer/right.png') no-repeat 50% 50% #fff;
+    background-size: 15px;
+    z-index: 10;
+    border-radius: 50%;
+    right: 0px;
+    top: 50%;
+    position: absolute;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    /* display: none; */
+}
+#leftClickBrands{
+    background: url('../../images/digikalaOffer/left.png') no-repeat 50% 50% #fff;
+    background-size: 15px;
+    z-index: 10;
+    border-radius: 50%;
+    left: 0px;
+    top: 50%;
+    position: absolute;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+@media screen and (max-width:1400px) {
+    #content > .bestBrands{
+        width:95%
+    }
+}
