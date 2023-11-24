@@ -11,6 +11,7 @@ const miniSlider1 = [
     {id:9 , name: 'refrigrator', link:'#' , image:'./images/miniSlider1/items/09.webp', discount:7 , price:34532 , priceAfterDiscount:(this.price * (this.discount/100)) , inventory:20},
     {id:9 , name: 'refrigrator', link:'#' , image:'./images/miniSlider1/items/09.webp', discount:7 , price:34532 , priceAfterDiscount:(this.price * (this.discount/100)) , inventory:20},
     {id:9 , name: 'refrigrator', link:'#' , image:'./images/miniSlider1/items/09.webp', discount:7 , price:34532 , priceAfterDiscount:(this.price * (this.discount/100)) , inventory:20},
+    {id:9 , name: 'refrigrator', link:'#' , image:'./images/miniSlider1/items/09.webp', discount:7 , price:34532 , priceAfterDiscount:(this.price * (this.discount/100)) , inventory:20},
     {id:9 , name: 'refrigrator', link:'#' , image:'./images/miniSlider1/items/09.webp', discount:7 , price:34532 , priceAfterDiscount:(this.price * (this.discount/100)) , inventory:20}
 ];
 
