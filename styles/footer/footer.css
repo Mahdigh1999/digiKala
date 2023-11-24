@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 #footer{
     /* width: 1400px; */
     /* height: 1200px; */
@@ -33,6 +36,8 @@
     background-color: #ccc;
 }
 .logoAndGoTop > #goTopBtn{
+    color: #555;
+    text-decoration: none;
     float: left;
     font-family: tr;
     border-radius: 10px;
@@ -321,4 +326,30 @@
 }
 #footer>.buttonFooter > .holderBut > .bottom > a > img {
     height: 20px;
+}
+
+
+@media screen and (max-width:1600px) {
+    #footer >.topFooter{
+
+        width: 100%;
+
+    }
+    .topFooter > #weAreSafe > .left >a{
+        width: 80px;
+        height: 80px;
+    }
+    .topFooter > .main > .beWithUs > .enterEmail > button{
+        float: left;
+        width: 20%;
+        height: 50%;
+    }
+    .topFooter > .main > .beWithUs > .enterEmail > input{
+        display: block;
+        float: right;
+        height: 45%;    
+        width: 70%;
+    
+        
+    }
 }
