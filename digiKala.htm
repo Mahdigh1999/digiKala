@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./styles/content/showSomeThing2.css">
     <link rel="stylesheet" href="./styles/content/showSomeThing3.css">
     <link rel="stylesheet" href="./styles/content/digiKalaOffer.css">
-    <link rel="stylesheet" href="./styles/content/bestBrands.css">
+    <link rel="stylesheet" href="./styles/content/bestBrand.css">
 
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/content/stories.css">
@@ -378,7 +378,25 @@
             </a>
         </div>
         </div>
-        <div id="bestBrands"></div>
+        <div class="bestBrands">
+            <div id = 'rightClickBrands' class="hiden"></div>
+            <div id = 'leftClickBrands'></div>
+            <h3>
+                محبوب ترین برندها
+                <img src="./images/bestBrands/icons8-star-64.png" alt="">
+            </h3>
+            <div id="brandsHolder">
+
+       
+            </div>
+        </div>
+        <div class="showSomeThing3">
+            <a href="#"><img src="./images/showSomeThing4/01.webp" alt=""></a>
+            <a href="#"><img src="./images/showSomeThing4/02.webp" alt=""></a>
+
+        
+        </div>
+
     </div>
 
     <div id = 'footer'> 
@@ -387,9 +405,9 @@
                 <div class="logo">
                     <img src="./images/footerTop/digi.svg" alt="">
                 </div>
-                <div id="goTopBtn">
+                <a href="#topAdv" id="goTopBtn">
                     بازگشت به بالا
-                </div>
+                </a>
             </div>
             <p class="phone">تلفن پشتیبانی </p>
             <p>021-12136</p>
@@ -455,7 +473,7 @@
                 </div>
                 <h4>با ثبت ایمیل از جدیدترین اخبار با خبر شوید</h4>
                 <div class="enterEmail">
-                    <input type="text">
+                    <input type="text" placeholder="ایمیل خود را وارد کنید">
                     <button id="submitEmail">ثبت</button>
                 </div>
               </div>
@@ -558,7 +576,7 @@
     <script src="./javaScript/handleModal.js"></script>
     <script src="./javaScript/miniSlider1.js"></script>
     <script src="./javaScript/digiKalaOffer.js"></script>
-    <!-- <script src="./javaScript/bestBrands"></script> -->
+    <script src="./javaScript/bestBrands.js"></script>
     <script src="./javaScript/showMoreFooter.js"></script>
 
 </body>
