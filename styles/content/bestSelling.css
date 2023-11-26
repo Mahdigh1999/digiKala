@@ -69,13 +69,13 @@
 
 #bestSellingHolder > .triad {
 
-
+    margin-top: 15px;
     height: 100%;
 
 
 }
 #bestSellingHolder > .triad >a{
-    height: 32%;
+    height: 33%;
     text-decoration: none;
     width: 100%;
     /* border: 1px solid black; */

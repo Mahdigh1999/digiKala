@@ -362,15 +362,18 @@ body{margin: 0;
 }
 
 
-@media screen and (max-width : 1000px ) {
-    .bottomOfHeader > #interstingThings > li{
+@media screen and (max-width : 1020px ) {
+    #header{
+        display: none;
+    }
+    /* .bottomOfHeader > #interstingThings > li{
         font-size: 12px;
         padding:none;
         margin:0 2px 0 2px;
     }    
     .bottomOfHeader > #interstingThings > li:nth-child(5){
         display: none;
-    }
+    } */
     
 }
 @media screen and (max-width : 1500px ) {

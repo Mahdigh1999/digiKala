@@ -26,7 +26,8 @@
     direction: rtl;
     text-indent: 50px;
     height: 50%;
-    line-height: 200%;
+    display: flex;
+    align-items: center;
     /* border: 1px solid red; */
     text-align: center;
 }
@@ -76,16 +77,51 @@
     }
     .digiClub >a{
  
-        height: 50%;
-
+        height: 30%;
+        
         
     }
-    .digiClub >div{
-        height: 50%; 
+    .digiClub >a>div{
+        display: flex;
+        align-items: center;
+        line-height: normal;
+        width: 70%;
+        /* border: 1px s    olid red; */
+
+    }
+    .digiClub >a >div{
+        direction: rtl;
+        text-indent: 50px;
+        height: 50%;
+        line-height: 200%;
+        /* border: 1px solid red; */
+        text-align: center;
+    }
+            .digiClub >div{
+        height: 100%; 
     }
     .digiClub >div:last-child{
         width: 100%;
         justify-content: center;
+}
+        
     }
 
+@media screen and (max-width:700px) {
+    .digiClub >a >div{
+        font-size: 9px;
+        text-indent: 25px;
+    }
+    .digiClub >.mission >div {
+        background-position: 95%  50%;
+        background-size: 20px;
+    }
+    .digiClub >.awards >div {
+        background-position: 95%  50%;
+        background-size: 20px;
+    }
+    .digiClub >.wheel >div {
+        background-position: 95%  50%;
+        background-size: 20px;
+    }
 }

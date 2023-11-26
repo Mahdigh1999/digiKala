@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 #footer{
-    display: none;
+    /* display: none; */
     /* width: 1400px; */
     /* height: 1200px; */
     /* overflow: hidden; */
@@ -352,5 +352,12 @@ html{
         width: 70%;
     
         
+    }
+}
+
+
+@media screen and (max-width:1020px) {
+    #footer{
+        display: none;
     }
 }
