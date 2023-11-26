@@ -2,6 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 #footer{
+    display: none;
     /* width: 1400px; */
     /* height: 1200px; */
     /* overflow: hidden; */

@@ -85,7 +85,7 @@
 #bestSellingHolder > .triad >a > img{
     /* border: 1px solid black; */
     width: 30%;
-    
+    height: 90%;
     z-index: -1;
 }
 #bestSellingHolder > .triad >a > span{
