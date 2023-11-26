@@ -1,0 +1,91 @@
+#content > .digiClub{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 67px;
+    padding: 10px 15px;
+    width: 1370px;
+    margin: 0 auto 20px;
+    border-radius:15px ;
+    background: linear-gradient(90deg,#35a6c8,#007295); 
+    /* justify-content: space-between; */
+}
+.digiClub >a{
+    text-decoration: none;
+    color: #555;
+    flex-grow: 1;
+    width: 20%;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    /* border: 1px solid #fff; */
+    margin-right:5px ;
+    background-color: #fff;
+    
+}
+.digiClub >a >div{
+    direction: rtl;
+    text-indent: 50px;
+    height: 50%;
+    line-height: 200%;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.digiClub >.mission >div {
+    background: url('../../images/digiClub/icons8-goal-64.png') no-repeat 90% 50%;
+    background-size: 30px;
+}
+.digiClub >.awards >div {
+    background: url('../../images/digiClub/icons8-discount-58.png') no-repeat 90% 50%;
+    background-size: 30px;
+}
+.digiClub >.wheel >div {
+    background: url('../../images/digiClub/icons8-wheel-48.png') no-repeat 90% 50%;
+    background-size: 30px;
+}
+
+
+.digiClub >a>img{
+    /* width: 20%; */
+    height: 100%;
+    
+}
+.digiClub >div:last-child{
+    flex-grow: 10;
+    /* width: 38%; */
+    display: flex;
+    align-items: center;
+    
+    direction: rtl;
+    background: none;
+}
+.digiClub >div:last-child > img{
+    height: 50%;
+}
+
+
+@media screen and (max-width:1400px) {
+    #content > .digiClub{
+        width: 95%;
+    }
+}
+@media screen and (max-width:1000px) {
+    #content > .digiClub{
+        width: 95%;
+        height: 134px;
+        flex-wrap:wrap-reverse ;
+    }
+    .digiClub >a{
+ 
+        height: 50%;
+
+        
+    }
+    .digiClub >div{
+        height: 50%; 
+    }
+    .digiClub >div:last-child{
+        width: 100%;
+        justify-content: center;
+    }
+
+}

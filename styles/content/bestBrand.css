@@ -83,3 +83,19 @@
         width:95%
     }
 }
+@media screen and (max-width:1400px) {
+    #content > .bestBrands{
+        height: 170px;
+    }
+    #content > .bestBrands > #brandsHolder >a>img{
+        /* height: 100%; */
+        width: 80%;
+        z-index: -1;
+    }
+    #content > .bestBrands > #brandsHolder >a{
+
+        height: 80%;
+        /* width: 150px; */
+    
+    }
+}
