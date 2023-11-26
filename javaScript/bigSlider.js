@@ -22,14 +22,14 @@ bigSliderGallery.style.right = (bigSlider.length - 1 ) *100 +'%';
 
 const divSwitched = bigSlider.map(e => `<div class = 'circle' id = BSS${e.id} onclick = bigSliderChanger(${e.id})></div>`);
 
-console.log(divSwitched);
+// console.log(divSwitched);
 switcherSlider.innerHTML = divSwitched.join('');
-console.log(divSwitched.join('\n'));
+// console.log(divSwitched.join('\n'));
 
 function bigSliderChanger(number){
     sliderPostion = number * 100;
     bigSliderGallery.style.right = sliderPostion +'%';
-    console.log(sliderPostion);
+    // console.log(sliderPostion);
 
     
     eval('BSS' + lastSwitched).className = 'circle'
@@ -53,7 +53,7 @@ function bigSliderChanger(number){
 sliderPostion = (bigSlider.length - 1) * 100;
 
 
-console.log(sliderPostion);
+// console.log(sliderPostion);
 bigSliderGoRight.onclick = moveRight4BigSlider;
 bigSliderGoLeft.onclick = moveLeft4BigSlider;
 let animationSilder;
@@ -81,7 +81,7 @@ bigSliderGallery.onmouseout = function(){
 function moveRight4BigSlider(){
 
 
-    console.log(sliderPostion);
+    // console.log(sliderPostion);
     sliderPostion === ((bigSlider.length -1 ) * 100 ) ? sliderPostion =0 : sliderPostion +=100;
     bigSliderGallery.style.right = sliderPostion + '%';
     eval('BSS' + lastSwitched).className = 'circle'
@@ -89,7 +89,7 @@ function moveRight4BigSlider(){
     lastSwitched = sliderPostion /100;
 }
 function moveLeft4BigSlider(){    
-    console.log(sliderPostion);
+    // console.log(sliderPostion);
     sliderPostion === 0 ? sliderPostion =  ((bigSlider.length -1 ) * 100): sliderPostion -=100;
     bigSliderGallery.style.right = sliderPostion + '%';
     eval('BSS' + lastSwitched).className = 'circle'

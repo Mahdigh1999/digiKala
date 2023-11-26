@@ -31,7 +31,7 @@ leftClickBrands.addEventListener('click',goLeftBrands);
 rightClickBrands.onclick = goRightBrands;
 
 function goRightBrands(){
-    brandsPos <= 1 ? rightClickBrands.className = 'hiden': rightClickBrands.className = 'show';
+    brandsPos >= -1 ? rightClickBrands.className = 'hiden': rightClickBrands.className = 'show';
     brandsPos < 0 ? brandsPos += brandSize :brandsPos = 0;
     brandsHolder.style.right = `${brandsPos}%`
     console.log(brandsPos);
