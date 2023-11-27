@@ -123,7 +123,7 @@
 #divTopInfoStoryContainer{
     height: 100px;
     width: 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #story > #rightClick4Story {
@@ -185,7 +185,28 @@
 
     }
 }
+@media screen and (max-width:1000px){
+    #content > .digiKalaStory{
+        height: 200px;
+    }
+    #content > .digiKalaStory > #initionalezor{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* border: 5px solid black; */
+        /* margin-top: 100px; */
+    }
+    #content > .digiKalaStory > #initionalezor > div {
+        margin: 10px;
+        /* border: 1px solid black; */
+        cursor: pointer;
+        height: 80px;
+        width:80px;
+        
+        
+    }
 
+}
 
 @keyframes timer {
     100%{

@@ -76,3 +76,13 @@
        width :100%
     }
 }
+@media screen and (max-width:1000px) {
+    .interstingServices{
+        flex-wrap: wrap;
+        height: 300px;
+        width :100%
+    }
+    .interstingServices > .items{
+        margin-right: 10px;
+    }
+}

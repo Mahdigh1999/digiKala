@@ -57,7 +57,7 @@
     width: 69%;
 }
 #content > .specialService4Members > .lefttHand > .head{
-
+    
     height: 15%;
     display: flex;
     justify-content: space-between;
@@ -79,8 +79,18 @@
 
     margin-left: 20px;
 }
-.specialService4Members > .lefttHand > .head > div >h4{
 
+
+
+
+.specialService4Members > .lefttHand > .head > div >svg{
+    fill:#941b80 ;
+    
+    width: 26px; 
+    height: 26px; 
+}
+.specialService4Members > .lefttHand > .head > div >h4{
+    font-weight: 300;
     margin: 0 5px 0 0;
     padding: 0;
 }
@@ -136,4 +146,25 @@
         padding: 2px 2px 0px 5px;
         width :50px;
     }
+    .specialService4Members > .lefttHand > .head > div >h4{
+        font-size: 10px;
+    }
+    .specialService4Members > .lefttHand > .head > div >svg{
+        display: block;
+        width :18px;
+        height: 18px;
+    }
+
+    .specialService4Members > .lefttHand > .head > a {
+        /* border: 1px solid red; */
+        background: url("../../images/specialService4Members/left.png") no-repeat 5% 50%  ;
+        background-size: 10px;
+        width: 70px;
+        font-size: 10px;
+
+
+        margin-left: 5px;
+    }
+    
+    
 }
