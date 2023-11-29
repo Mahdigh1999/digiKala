@@ -136,7 +136,7 @@
     #content > .supermarketDicount{
         display: block;
         height: 160px;
-        width :100%;
+        width :90%;
     }
     .supermarketDicount > .right{
         justify-content: center;
