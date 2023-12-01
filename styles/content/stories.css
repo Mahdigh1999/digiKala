@@ -213,3 +213,27 @@
         width: 100%;
     }
 }
+@media screen and (max-width:900px) {
+    #story{
+
+        width: 400px;
+        height: 300px;
+        margin: 150px auto;
+        transform-style: preserve-3d;
+        /* transform: rotateY(45deg) ; */
+    }
+    #story > #imgHolder{
+        transform-origin: 200px 150px -200px;
+        
+    }
+    #story > #imgHolder> #leftStory{
+        transform: rotateY(-90deg) translateX(-400px) ;
+    }
+    #story > #imgHolder> #rightStory{
+        transform: rotateY(90deg) translateX(400px) ;
+    }
+    #story > #imgHolder> #backStory{
+    
+        transform: translateZ(-400px) rotateY(180deg);
+    }
+}

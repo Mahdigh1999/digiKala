@@ -121,7 +121,7 @@
     }
     #content > .bigSliderHolder >.bigSlider > #switcherSlider{
 
-        left: 20%;
+        left: 30%;
         /* margin-left: 150px; */
 
     }
@@ -134,7 +134,13 @@
 }
 @media screen and (max-width:1000px) {
     #content > .bigSliderHolder >.bigSlider > #switcherSlider{
-        left: 80%;
+        left: 20%;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:1000px) {
+    #content > .bigSliderHolder >.bigSlider > #switcherSlider{
+        display: none;
     }
     #content > .bigSliderHolder {
 
