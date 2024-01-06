@@ -51,8 +51,12 @@
     z-index: -1;
 }
 #rightClickBrands{
-    background: url('../../images/digikalaOffer/right.png') no-repeat 50% 50% #fff;
-    background-size: 15px;
+    opacity: 0.6;
+    background-color: #ddd;
+    fill: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
     border-radius: 50%;
     right: 0px;
@@ -64,8 +68,12 @@
     /* display: none; */
 }
 #leftClickBrands{
-    background: url('../../images/digikalaOffer/left.png') no-repeat 50% 50% #fff;
-    background-size: 15px;
+    opacity: 0.6;
+    background-color: #ddd;
+    fill: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
     border-radius: 50%;
     left: 0px;

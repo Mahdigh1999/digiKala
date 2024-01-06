@@ -87,29 +87,34 @@
 #rightClickOffer:hover{ 
     background-color: #ccc;
 }
-#leftClickOffer{    
-    display: none;
-    background:url('../../images/digikalaOffer/left.png') no-repeat 50% 50% #fff;
-    background-size: 20px;
+#leftClickOffer{   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    background-color: #ddd;
     position: absolute;
     z-index: 10;
     height: 70px;
     width: 70px;
-    border: 3px solid black;
+    border: 1px solid #ccc;
     top: 40%;
     left: 10px;
 }
 #rightClickOffer{
     display: none;
-    background:url('../../images/digikalaOffer/right.png') no-repeat 50% 50% #fff;
-    background-size: 20px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    background-color: #ddd;
     right: 10px;
     top:40%;
     position: absolute;
     z-index: 10;
     height: 70px;
     width: 70px;
-    border: 3px solid black;
+    border: 3px solid #ccc;
 }
 /* #digiKalaOffer > .before1400px > a > div{
     margin:10px auto;

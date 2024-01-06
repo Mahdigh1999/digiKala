@@ -51,15 +51,15 @@ let offerPos = 0 ;
 leftClickOffer.onclick = function(){
     offerPos >= sizeOfPairs * Math.ceil(digiOffers.length /2) - window.innerWidth ? offerPos : offerPos+=sizeOfPairs;
     offersHolder.style.transform= `translateX(${offerPos}px)`; 
-    rightClickOffer.style.display = 'block'
+    rightClickOffer.style.display = 'flex'
     offerPos >= sizeOfPairs * Math.ceil(digiOffers.length /2) - window.innerWidth?leftClickOffer.style.display = 'none':leftClickOffer.style.display = 'block';
     console.log('offersLeft',offerPos)
 }
 rightClickOffer.onclick = function(){
     offerPos < 1  ? offerPos = 0 : offerPos -= sizeOfPairs;
     offersHolder.style.transform= `translateX(${offerPos}px)`; 
-    leftClickOffer.style.display = 'block'
-    offerPos >  0 ? rightClickOffer.style.display = 'block':rightClickOffer.style.display ='none' ;
+    leftClickOffer.style.display = 'flex'
+    offerPos >  0 ? rightClickOffer.style.display = 'flex':rightClickOffer.style.display ='none' ;
     console.log('offersLeft',offerPos)
 }
 // rightClickOffer.onclick = function(){

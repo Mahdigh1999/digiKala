@@ -80,7 +80,7 @@
     .interstingServices{
         flex-wrap: wrap;
         height: 300px;
-        width :100%
+        width :95%
     }
     .interstingServices > .items{
         margin-right: 10px;

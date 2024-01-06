@@ -237,3 +237,12 @@
         transform: translateZ(-400px) rotateY(180deg);
     }
 }
+
+@media screen and (max-width:600px){
+    #content{
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
